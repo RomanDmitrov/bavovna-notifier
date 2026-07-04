@@ -16,9 +16,8 @@ def build_message_text(data: BookingNotification) -> str:
             f"<b>Email:</b> {data.email or '—'}\n"
             f"<b>Телефон:</b> {data.phone or '—'}\n"
             f"<b>Telegram:</b> {data.telegram or '—'}\n"
-            f"<b>Дата події:</b> {data.event_date or '—'}\n"
             f"<b>Тип івенту:</b> {data.event_type or '—'}\n"
-            f"<b>Кількість гостей:</b> {data.guests_count or '—'}\n"
+            f"<b>Кількість гостей:</b> {data.guests or '—'}\n"
             f"<b>Бюджет:</b> {data.budget or '—'}\n"
             f"<b>Повідомлення:</b> {data.message or '—'}"
         )
@@ -29,7 +28,7 @@ def build_message_text(data: BookingNotification) -> str:
             f"<b>Email:</b> {data.email or '—'}\n"
             f"<b>Телефон:</b> {data.phone or '—'}\n"
             f"<b>Telegram:</b> {data.telegram or '—'}\n"
-            f"<b>Тип співпраці:</b> {data.cooperation_type or '—'}\n"
+            f"<b>Тип співпраці:</b> {data.partnership_type or '—'}\n"
             f"<b>Повідомлення:</b> {data.message or '—'}"
         )
     return text
