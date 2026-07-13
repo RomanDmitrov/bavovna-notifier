@@ -15,7 +15,7 @@ class BookingNotification(BaseModel):
     message: Optional[str] = None
 
     # Поля только для booking (заявка на бронювання)
-    event_type: Optional[str] = None
+    category: Optional[str] = None
     guests: Optional[int] = None
     budget: Optional[str] = None
 
